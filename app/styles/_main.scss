@@ -1,0 +1,28 @@
+body{
+    font-family: 'arial';
+    font-size: 16pt;
+    background: $offWhite;
+    color: $darkBlue2;
+    margin: 0px;
+}
+
+.card{
+    margin: 0em 2em 0em 2em;
+    padding: 1em;
+    background-color: $lightBlue1;
+    color: $darkBlue1;
+    border-radius: 8px;
+    border: 2px solid $lightBlue2;
+    min-height: 18em;
+}
+
+.heading{
+    margin:0.5em 1em;
+}
+
+img.profile{
+    float: left;
+    /*display: inline-block;*/
+    height: 18em;
+    padding-right: 1em;
+}
