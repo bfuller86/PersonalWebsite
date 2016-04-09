@@ -83,7 +83,7 @@ module.exports = function(grunt){
        
        watch: {
           files: ['index.html', '<%= jshint.files %>', 'vendor/**/*.js', 'app/**/*.scss'],
-          tasks: ['clean:build', 'sass', 'copy:main', 'jshint', 'concat', 'uglify:buildApp', 'copy:devScripts']
+          tasks: ['clean:build', 'sass', 'copy:main', 'jshint', 'concat', 'uglify:buildApp', 'copy:prodScripts']
        }
     });
     
