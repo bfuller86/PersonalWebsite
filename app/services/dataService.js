@@ -122,16 +122,21 @@ app.service('dataService', function(){
         "Resumes": [
             {
                 "Photo": "",
-                "FileLocation": ""
+                "FileLocation": "",
+                "AltText" : "Resume in .pdf"
             },
             {
                 "Photo": "",
-                "FileLocation": ""
+                "FileLocation": "",
+                "AltText" : "Resume in .docx"
             }
         ],
-        "ContactInfo": {
-            "Email": "contactme@brianfuller.us"
-        }
+        "ContactInfo": [
+            {
+                "Key": "Email",
+                "Info": "contactme@brianfuller.us"
+            }
+        ]
     };
     
     return data;

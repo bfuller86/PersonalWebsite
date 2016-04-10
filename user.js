@@ -197,16 +197,21 @@ app.service('dataService', function(){
         "Resumes": [
             {
                 "Photo": "",
-                "FileLocation": ""
+                "FileLocation": "",
+                "AltText" : "Resume in .pdf"
             },
             {
                 "Photo": "",
-                "FileLocation": ""
+                "FileLocation": "",
+                "AltText" : "Resume in .docx"
             }
         ],
-        "ContactInfo": {
-            "Email": "contactme@brianfuller.us"
-        }
+        "ContactInfo": [
+            {
+                "Key": "Email",
+                "Info": "contactme@brianfuller.us"
+            }
+        ]
     };
     
     return data;
@@ -215,8 +220,8 @@ app.controller('BioController', ['$scope', 'dataService', function($scope, dataS
     $scope.aboutMeText = dataService.Profile.Description;
     $scope.profileImage = dataService.Profile.Photo;
 }]);
-app.controller('ContactController', ['$scope', function($scope){
-    
+app.controller('ContactController', ['$scope', 'dataService', function($scope, dataService){
+    $scope.contactInfo = dataService.ContactInfo;
 }]);
 app.controller('ErrorController', ['$scope', function($scope){
     
@@ -227,6 +232,6 @@ app.controller('GamesController', ['$scope', 'dataService', function($scope, dat
 app.controller('ProjectsController', ['$scope', 'dataService', function($scope, dataService){
     $scope.projects = dataService.Projects;
 }]);
-app.controller('ResumeController', ['$scope', function($scope){
-    
+app.controller('ResumeController', ['$scope', 'dataService', function($scope, dataService){
+    $scope.Resumes = dataService.Resumes;
 }]);

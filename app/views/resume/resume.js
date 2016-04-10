@@ -1,3 +1,3 @@
-app.controller('ResumeController', ['$scope', function($scope){
-    
+app.controller('ResumeController', ['$scope', 'dataService', function($scope, dataService){
+    $scope.Resumes = dataService.Resumes;
 }]);

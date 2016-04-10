@@ -1,3 +1,3 @@
-app.controller('ContactController', ['$scope', function($scope){
-    
+app.controller('ContactController', ['$scope', 'dataService', function($scope, dataService){
+    $scope.contactInfo = dataService.ContactInfo;
 }]);
