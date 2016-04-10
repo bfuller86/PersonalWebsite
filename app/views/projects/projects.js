@@ -1,3 +1,3 @@
-app.controller('ProjectsController', ['$scope', function($scope){
-    
+app.controller('ProjectsController', ['$scope', 'dataService', function($scope, dataService){
+    $scope.projects = dataService.Projects;
 }]);

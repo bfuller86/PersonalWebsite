@@ -4,23 +4,23 @@ function NavigationController($scope, $element, $attrs) {
   $scope.links = [
       {
         text: "Home", 
-        url: "home"
+        url: "root.home"
       },
       {
         text: "Projects", 
-        url: "projects"
+        url: "root.projects"
       },
       {
         text: "Games", 
-        url: "games"
+        url: "root.games"
       },
       {
         text: "Resume", 
-        url: "resume"
+        url: "root.resume"
       },
       {
         text: "Contact", 
-        url: "contact"
+        url: "root.contact"
       }
   ];
 }
