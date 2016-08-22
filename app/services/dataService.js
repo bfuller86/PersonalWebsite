@@ -121,14 +121,16 @@ app.service('dataService', function(){
         ],
         "Resumes": [
             {
-                "Photo": "",
-                "FileLocation": "",
-                "AltText" : "Resume in .pdf"
+                "Photo": "app/content/images/pdf_icon.jpg",
+                "FileLocation": "http://www.google.com",
+                "AltText" : "Download Resume.pdf Image",
+                "Description": "Resume (.pdf)"
             },
             {
-                "Photo": "",
-                "FileLocation": "",
-                "AltText" : "Resume in .docx"
+                "Photo": "app/content/images/docx_icon.jpeg",
+                "FileLocation": "http://www.google.com",
+                "AltText" : "Download Resume.docx Image",
+                "Description": "Resume (.docx)"
             }
         ],
         "ContactInfo": [

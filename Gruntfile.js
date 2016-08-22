@@ -24,7 +24,7 @@ module.exports = function(grunt){
 
        copy: {
            main: {
-               src: ['index.html', 'app.css', 'app/**/*{.html,.css,.json}', 'favicon.ico'],
+               src: ['index.html', 'app.css', 'app/**/*{.html,.css,.json,.jpg,.jpeg,.png,.svg}', 'favicon.ico'],
                dest: 'build/'
            },
            devScripts: {
