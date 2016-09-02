@@ -1,6 +1,6 @@
 <h1 class="heading">Resume</h1>
 <div class="card">
-    <div ng-repeat="resume in Resumes">
+    <div class="resume_download" ng-repeat="resume in Resumes">
         <a href="{{resume.FileLocation}}">
             <img class="resume_icon" src="{{resume.Photo}}" alt="{{resume.AltText}}" />
             <p>{{resume.Description}}</p>

@@ -19,12 +19,15 @@ body {
 
 img.profile {
   float: left;
-  /*display: inline-block;*/
   height: 18em;
   padding-right: 1em; }
 
+.resume_download {
+  float: left;
+  padding: 25px; }
+
 .resume_icon {
-  height: 64px; }
+  height: 128px; }
 
 #navigation {
   list-style: none;

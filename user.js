@@ -77,11 +77,11 @@ app.service('dataService', function(){
     var data = {
         "Profile":{
             "Name": "Brian Fuller",
-            "Photo": "https://upload.wikimedia.org/wikipedia/commons/6/62/Hon._James_Buchanan_-_NARA_-_528318-crop.jpg",
+            "Photo": "app/content/images/ProfilePic.jpg",
             "Description": [
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales diam quis sollicitudin sagittis. Vivamus mollis tincidunt placerat. Aliquam venenatis volutpat pellentesque. Curabitur sed vulputate turpis. Integer vel lacinia arcu. Ut risus ipsum, pharetra eu aliquet ac, porta vitae lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Etiam vitae est eu erat pharetra finibus. Morbi congue orci ut mauris porta, sit amet pellentesque justo pulvinar.", 
+                "My name is Brian Fuller, and I am a software developer. Throughout my life I've been completely enamoured with computers and technology. Everything from the latest greatest video games to productivity applications deeply held my interest. Knowing this, it may seem trivial, or obvious, that my eventual career would ", 
                 
-                "Cras a lectus nec nulla tincidunt molestie sed eu justo. Quisque nec erat auctor, elementum lacus id, aliquam nunc. Morbi laoreet tincidunt ante, dignissim interdum metus viverra ut. Praesent ultricies consectetur augue, non eleifend enim luctus vel. Nullam viverra accumsan pulvinar. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque non est eget metus mattis aliquet sed vel tellus. Nulla a risus sem. Donec sed auctor metus. Vivamus quis ante quis enim malesuada euismod et ut dolor. Sed ultrices efficitur velit eu elementum. Mauris at justo ultrices, porttitor libero quis, tincidunt leo. Nulla ultrices lorem sed sem faucibus, vitae ultrices sem gravida. Aenean faucibus quam nec mollis semper."
+                ""
             ]  
         },
         "Games": {
@@ -91,8 +91,10 @@ app.service('dataService', function(){
                 "Date": "05-01-2012",
                 "Photo": "https://upload.wikimedia.org/wikipedia/en/a/ac/TonyHawkHDArt.jpg",
                 "Trailer": "https://youtu.be/fXkW_FY1SMg",
+                "Description": "",
+                "Platform": ["Xbox360", "PS3", "PC"],
                 "Genre": "Action/Sports",
-                "Tags": ["Action", "Sports", "Skateboarding", "Tony Hawk"],
+                "Tags": ["Action", "Sports", "Skateboarding", "Tony Hawk", "Steam"],
                 "Tech": ["Unrealscript", "C++"],
                 "GameEngine": "Unreal Development Kit - UE3",
                 "Publisher": "Activision",
@@ -105,6 +107,8 @@ app.service('dataService', function(){
                 "Date": "08-30-2012",
                 "Photo": "",
                 "Trailer": "https://youtu.be/0WAK4g-K8zo",
+                "Description": "",
+                "Platform": ["iOS"],
                 "Genre": "Digital Pet Simulator",
                 "Tags": ["Virtual Pet", "Pet"],
                 "Tech": ["C#"],
@@ -119,6 +123,8 @@ app.service('dataService', function(){
                 "Date": "09-30-2013",
                 "Photo": "",
                 "Trailer": "https://youtu.be/74DBR8Tmg-k",
+                "Description": "",
+                "Platform": ["iOS"],
                 "Genre": "Action/Sports",
                 "Tags": ["Action", "Sports", "Skateboarding"],
                 "Tech": ["C#", "Objective-C", "Java"],
@@ -133,6 +139,8 @@ app.service('dataService', function(){
                 "Date": "11-15-2013",
                 "Photo": "",
                 "Trailer": "https://www.youtube.com/watch?v=VNtwcNmbCrc",
+                "Description": "",
+                "Platform": ["iOS", "Android"],
                 "Genre": "Action",
                 "Tags": ["Action", "Endless Runner", "Hunger Games"],
                 "Tech": ["C#"],
@@ -147,8 +155,10 @@ app.service('dataService', function(){
                 "Date": "11-15-2012",
                 "Photo": "",
                 "Trailer": "",
+                "Description": "",
+                "Platform": ["PC"],
                 "Genre": "Action/Experimental Storytelling",
-                "Tags": ["Action", "Zombies", "Yoga", "IndieCade"],
+                "Tags": ["Action", "Zombies", "Yoga", "IndieCade", "Kinect", "Kinect For Windows"],
                 "Tech": ["C#"],
                 "GameEngine": "Unity 3D",
                 "Publisher": "DePaul University",
