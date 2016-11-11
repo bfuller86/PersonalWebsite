@@ -1,6 +1,6 @@
 <h1 class="heading">Games</h1>
-<div class="card">
-    <div ng-repeat="game in games"  id="{{game.Key}}" class="gameDetails" data-date="{{game.Date}}" data-genre="{{game.Genre}}" data-tag="{{game.Tags}}">
+<div ng-repeat="game in games" class="card">
+    <div id="{{game.Key}}" class="gameDetails" data-date="{{game.Date}}" data-genre="{{game.Genre}}" data-tag="{{game.Tags}}">
 
         <img ng-if="{{game.Photo}}" src="{{game.Photo}}" />
         <iframe ng-if="{{game.Trailer}}" src="{{game.Trailer}}"></iframe>

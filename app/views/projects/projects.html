@@ -1,6 +1,6 @@
 <h1 class="heading">Projects</h1>
-<div class="card">
-    <div ng-repeat="project in projects"  id="{{project.Key}}" class="projectDetails" data-date="{{project.Date}}" data-tag="{{project.Tags}}">
+<div ng-repeat="project in projects" class="card">
+    <div id="{{project.Key}}" class="projectDetails" data-date="{{project.Date}}" data-tag="{{project.Tags}}">
 
         <img ng-if="{{project.Photo}}" src="{{project.Photo}}" />
         <iframe ng-if="{{project.Trailer}}" src="{{project.Trailer}}"></iframe>
