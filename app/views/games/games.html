@@ -5,19 +5,41 @@
         <img ng-if="{{game.Photo}}" src="{{game.Photo}}" />
         <iframe ng-if="{{game.Trailer}}" src="{{game.Trailer}}"></iframe>
         
-        <h3 class="name">{{game.Name}}</h3>
+        <h2 class="name">{{game.Name}}</h2>
         
-        <p class="company">{{game.Publisher}}</p>
-        <p class="company">{{game.Developer}}</p>
-        <p class="gameEngine">{{game.GameEngine}}</p>
-        <p class="myTitle">{{game.DevTitle}}</p>
+        <table>
+            <tr>
+                <td><label>Publisher</label></td>
+                <td><p class="company">{{game.Publisher}}</p></td>
+            </tr>
+            <tr>
+                <td><label>Developer</label></td>
+                <td><p class="company">{{game.Developer}}</p></td>
+            </tr>
+            <tr>
+                <td><label>Game Engine</label></td>
+                <td><p class="gameEngine">{{game.GameEngine}}</p></td>
+            </tr>
+            <tr>
+                <td><label>My Title</label></td>
+                <td><p class="myTitle">{{game.DevTitle}}</p></td>
+            </tr>
+            <tr>
+                <td><label>Genre</label></td>
+                <td><p class="genre">{{game.Genre}}</p></td>
+            </tr>
+            <tr>
+                <td><label>Release Date</label></td>
+                <td><p class="date">{{game.Date}}</p></td>
+            </tr>
+        </table>
         
+        <h4 ng-if="game.Tech && game.Tech.length > 0">Technologies Used</h4>
         <ul class="tech">
             <li ng-repeat="techItem in game.Tech">{{techItem}}</li>
         </ul>
         
-        <p class="date">{{game.Date}}</p>
-        <p class="genre">{{game.Genre}}</p>
+        <h4 ng-if="game.Tags && game.Tags.length > 0">Tags</h4>
         <ul class="tags">
             <li ng-repeat="tag in game.Tags">{{tag}}</li>
         </ul>

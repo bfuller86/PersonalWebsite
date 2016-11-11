@@ -51,4 +51,10 @@ img.profile {
   #navigation a:hover {
     background: #003b6c; }
 
+.gameDetails td {
+  padding-right: 3em; }
+  .gameDetails td label {
+    font-size: 12pt;
+    font-weight: 700; }
+
 /*# sourceMappingURL=app.css.map */

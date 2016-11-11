@@ -5,14 +5,17 @@
         <img ng-if="{{project.Photo}}" src="{{project.Photo}}" />
         <iframe ng-if="{{project.Trailer}}" src="{{project.Trailer}}"></iframe>
         
-        <h3 class="name">{{project.Name}}</h3>
+        <h2 class="name">{{project.Name}}</h2>
         
         <p>{{project.Description}}</p>
         
+        <h4 ng-if="project.Clients && project.Clients.length === 1">Client</h4>
+        <h4 ng-if="project.Clients && project.Clients.length > 1">Clients</h4>
         <ul class="company">
             <li ng-repeat="client in project.Clients">{{client}}</li>
         </ul>
-
+        
+        <h4 ng-if="project.Tech && project.Tech.length > 0">Technologies Used</h4>
         <ul class="tech">
             <li ng-repeat="techItem in project.Tech">{{techItem}}</li>
         </ul>
