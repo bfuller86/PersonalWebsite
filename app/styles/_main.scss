@@ -1,18 +1,18 @@
 body{
     font-family: 'arial';
     font-size: 16pt;
-    background: $offWhite;
-    color: $darkBlue2;
+    background: $page_color;
+    color: $color_accent;
     margin: 0px;
 }
 
 .card{
     margin: 0em 2em 0em 2em;
     padding: 1em;
-    background-color: $lightBlue1;
-    color: $darkBlue1;
+    background-color: $color_main;
+    color: $color_main_text;
     border-radius: 8px;
-    border: 2px solid $lightBlue2;
+    border: 2px solid $color_main_border;
     min-height: 18em;
 }
 
