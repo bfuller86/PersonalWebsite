@@ -90,7 +90,7 @@ app.service('dataService', function(){
                 "Name": "Tony Hawk's Pro Skater HD",
                 "Date": "05-01-2012",
                 "Photo": "https://upload.wikimedia.org/wikipedia/en/a/ac/TonyHawkHDArt.jpg",
-                "Trailer": "https://youtu.be/fXkW_FY1SMg",
+                "Trailer": "https://www.youtube.com/embed/fXkW_FY1SMg",
                 "Description": "",
                 "Platform": ["Xbox360", "PS3", "PC"],
                 "Genre": "Action/Sports",
@@ -106,7 +106,7 @@ app.service('dataService', function(){
                 "Name": "The Beasties: Hello World",
                 "Date": "08-30-2012",
                 "Photo": "",
-                "Trailer": "https://youtu.be/0WAK4g-K8zo",
+                "Trailer": "https://www.youtube.com/embed/0WAK4g-K8zo",
                 "Description": "",
                 "Platform": ["iOS"],
                 "Genre": "Digital Pet Simulator",
@@ -122,7 +122,7 @@ app.service('dataService', function(){
                 "Name": "Skateboard Slam",
                 "Date": "09-30-2013",
                 "Photo": "",
-                "Trailer": "https://youtu.be/74DBR8Tmg-k",
+                "Trailer": "https://www.youtube.com/embed/74DBR8Tmg-k",
                 "Description": "",
                 "Platform": ["iOS"],
                 "Genre": "Action/Sports",
@@ -138,7 +138,7 @@ app.service('dataService', function(){
                 "Name": "Hunger Games: Panem Run",
                 "Date": "11-15-2013",
                 "Photo": "",
-                "Trailer": "https://www.youtube.com/watch?v=VNtwcNmbCrc",
+                "Trailer": "https://www.youtube.com/embed/VNtwcNmbCrc",
                 "Description": "",
                 "Platform": ["iOS", "Android"],
                 "Genre": "Action",
@@ -238,8 +238,12 @@ app.controller('ContactController', ['$scope', 'dataService', function($scope, d
 app.controller('ErrorController', ['$scope', function($scope){
     
 }]);
-app.controller('GamesController', ['$scope', 'dataService', function($scope, dataService){
+app.controller('GamesController', ['$scope', 'dataService', '$sce', function($scope, dataService, $sce){
     $scope.games = dataService.Games;
+
+    $scope.trustSrc = function(src) {
+        return $sce.trustAsResourceUrl(src);
+    };
 }]);
 app.controller('ProjectsController', ['$scope', 'dataService', function($scope, dataService){
     $scope.projects = dataService.Projects;

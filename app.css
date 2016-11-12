@@ -56,5 +56,11 @@ img.profile {
   .gameDetails td label {
     font-size: 12pt;
     font-weight: 700; }
+.gameDetails .game_trailer {
+  display: block;
+  clear: both;
+  height: 400px;
+  width: 600px;
+  margin: 2em 0em 2em 0em; }
 
 /*# sourceMappingURL=app.css.map */

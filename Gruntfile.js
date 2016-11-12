@@ -12,7 +12,7 @@ module.exports = function(grunt){
          build: {
              files: {
                  'user.js': ['declarations.js','app/**/*.js'],
-                 'vendor.js': ['node_modules/angular/angular.js', 'node_modules/angular-ui-router/release/angular-ui-router.js'],
+                 'vendor.js': ['node_modules/angular/angular.js', 'node_modules/angular-ui-router/release/angular-ui-router.js', 'node_modules/angular-sanitize/angular-sanitize.js'],
                  'app.js': ['vendor.js', 'user.js']
              }
          }
@@ -80,7 +80,7 @@ module.exports = function(grunt){
                }
            }
        },
-
+       
        watch: {
           files: ['index.html', 'declarations.js', '<%= jshint.files %>', 'vendor/**/*.js', 'app/**/*{.js,.html,.scss}'],
           tasks: ['clean:build', 'sass', 'copy:main', 'jshint', 'concat', 'uglify:buildApp', /*'copy:prodScripts'*/ 'copy:devScripts']
@@ -105,7 +105,7 @@ module.exports = function(grunt){
     grunt.registerTask('update-vendor', ['clean:vendor', 'copy:vendor']);
     grunt.registerTask('test', ['jshint', 'qunit']);
     grunt.registerTask('testcopy', ['clean:build', 'copy:main']);
-    grunt.registerTask('localBuild', ['clean:build', 'copy:main', 'jshint', 'concat', 'uglify', 'copy:vendorLocalOnly']);
+    grunt.registerTask('build', ['clean:build', 'sass', 'copy:main', 'jshint', 'concat', 'uglify:buildApp', /*'copy:prodScripts'*/ 'copy:devScripts']);
 
     // Done!
     grunt.log.writeln("Gruntfile operations completed.");
