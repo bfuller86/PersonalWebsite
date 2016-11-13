@@ -53,14 +53,25 @@ img.profile {
 
 .gameDetails td {
   padding-right: 3em; }
-  .gameDetails td label {
-    font-size: 12pt;
-    font-weight: 700; }
 .gameDetails .game_trailer {
   display: block;
   clear: both;
-  height: 400px;
-  width: 600px;
+  height: 40vw;
+  width: 60vw;
+  max-height: 400px;
+  max-width: 600px;
   margin: 2em 0em 2em 0em; }
+.gameDetails label {
+  font-size: 12pt;
+  font-weight: 700; }
+.gameDetails h4 {
+  margin-bottom: 0.5em; }
+.gameDetails ul {
+  margin-top: 0; }
+.gameDetails .tag {
+  display: inline;
+  margin: 0.5em 0.25em;
+  font-size: 11pt;
+  color: #FFC000; }
 
 /*# sourceMappingURL=app.css.map */
