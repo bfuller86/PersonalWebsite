@@ -74,4 +74,27 @@ img.profile {
   font-size: 11pt;
   color: #FFC000; }
 
+.projectDetails td {
+  padding-right: 3em; }
+.projectDetails .project_trailer {
+  display: block;
+  clear: both;
+  height: 40vw;
+  width: 60vw;
+  max-height: 400px;
+  max-width: 600px;
+  margin: 2em 0em 2em 0em; }
+.projectDetails label {
+  font-size: 12pt;
+  font-weight: 700; }
+.projectDetails h4 {
+  margin-bottom: 0.5em; }
+.projectDetails ul {
+  margin-top: 0; }
+.projectDetails .tag {
+  display: inline;
+  margin: 0.5em 0.25em;
+  font-size: 11pt;
+  color: #FFC000; }
+
 /*# sourceMappingURL=app.css.map */
