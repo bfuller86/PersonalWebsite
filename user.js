@@ -5,10 +5,6 @@ function NavigationController($scope, $element, $attrs) {
 
   $scope.links = [
       {
-        text: "Home", 
-        url: "root.home"
-      },
-      {
         text: "Projects", 
         url: "root.projects"
       },
@@ -79,9 +75,11 @@ app.service('dataService', function(){
             "Name": "Brian Fuller",
             "Photo": "app/content/images/ProfilePic.jpg",
             "Description": [
-                "Hello, my name is Brian Fuller, and I am a software engineer. Throughout my life I've been completely enamoured with computers and technology. Having an interest in software since the very beginning, I've analyzed, and tinkered with, everything from the latest greatest video games to productivity applications. Although it may seem like an easy path for someone to take that interest and develop it into a career, my parents were ever determined to make sure I 'went outside more'. Despite frequent delays, I can nevertheless say they may have won many battles, but I won the war.", 
+                "Hello, my name is Brian Fuller, and I am a software engineer. Throughout my life I've been completely enamoured with computers and technology. Having an interest in software since the very beginning, I've analyzed, and tinkered with, everything from the latest greatest video games to productivity applications. Although it may seem like an easy path for someone to take that interest and develop it into a career, my parents were ever determined to make sure I 'went outside more'. Despite frequent delays, I can nevertheless say that although they won many battles, I definitively won the war.",
 
-                "Originally from the south suburbs of Chicago, I eventually came to my senses and have since moved to the north suburbs. I could not be more pleased. Believe me, I have seen the light. The north-side is glorious! I am never going back."
+                "Originally from the south suburbs of Chicago, I eventually came to my senses and have since moved to the north suburbs. I could not be more pleased. Believe me, I have seen the light. The north-side is glorious! I am never going back.",
+
+                "Some of my non-techincal personal interests include: discussing movie plotlines and casting decisions, absolutely everything related to video games (the industry, history, favorite games, game mechanics, design decisions, etc.), and the self-induced anguish I ritually experience by watching the Chicago Bears play football."
             ]  
         },
         "Games": {

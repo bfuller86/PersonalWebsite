@@ -1,22 +1,29 @@
 #navigation{
+    height:70px;
     list-style: none;
     margin: 0px;
     background: $color_accent;
     border-bottom: 2px solid $color_accent_border;
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -webkit-flex-flow: row wrap;
-    justify-content: flex-start;
+    padding: 0px;
     
+    @media screen and (min-width: 800px) 
+    {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -webkit-flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
     a{
+        height: 100%;
         text-decoration: none;
         display: block;
-        padding: 1em;
+        padding: 0px 1em;
+        line-height: 70px;
         color: $color_accent_text;
         border-right: 1px solid $color_accent_text;
         border-left: 1px solid $color_accent_text;
@@ -25,4 +32,11 @@
     a:hover{
         background: $color_main_text;
     }
+}
+
+.logo{
+    display:block;
+    height: 70px;
+    width: 300px;
+    background-image: url("app/content/images/logo.png");
 }

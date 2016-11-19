@@ -3,10 +3,6 @@ function NavigationController($scope, $element, $attrs) {
 
   $scope.links = [
       {
-        text: "Home", 
-        url: "root.home"
-      },
-      {
         text: "Projects", 
         url: "root.projects"
       },

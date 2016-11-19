@@ -6,7 +6,7 @@ body {
   margin: 0px; }
 
 .card {
-  margin: 0em 2em 2em 2em;
+  margin: 2vw;
   padding: 1em;
   background-color: #1193ff;
   color: #003b6c;
@@ -15,12 +15,13 @@ body {
   min-height: 18em; }
 
 .heading {
-  margin: 0.5em 1em; }
+  margin: 2vw 3vw -1vw 3vw; }
 
 img.profile {
   float: left;
-  height: 18em;
-  padding-right: 1em; }
+  height: 35vw;
+  padding-right: 1em;
+  max-height: 18em; }
 
 .resume_download {
   float: left;
@@ -30,26 +31,38 @@ img.profile {
   height: 128px; }
 
 #navigation {
+  height: 70px;
   list-style: none;
   margin: 0px;
   background: #004c8c;
   border-bottom: 2px solid #43739b;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  justify-content: flex-start; }
+  padding: 0px; }
+  @media screen and (min-width: 800px) {
+    #navigation {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      justify-content: flex-start; } }
   #navigation a {
+    height: 100%;
     text-decoration: none;
     display: block;
-    padding: 1em;
+    padding: 0px 1em;
+    line-height: 70px;
     color: #aad8ff;
     border-right: 1px solid #aad8ff;
     border-left: 1px solid #aad8ff; }
   #navigation a:hover {
     background: #003b6c; }
+
+.logo {
+  display: block;
+  height: 70px;
+  width: 300px;
+  background-image: url("app/content/images/logo.png"); }
 
 .gameDetails td {
   padding-right: 3em; }

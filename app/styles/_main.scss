@@ -7,7 +7,7 @@ body{
 }
 
 .card{
-    margin: 0em 2em 2em 2em;
+    margin: 2vw;
     padding: 1em;
     background-color: $color_main;
     color: $color_main_text;
@@ -17,17 +17,17 @@ body{
 }
 
 .heading{
-    margin:0.5em 1em;
+    margin: 2vw 3vw -1vw 3vw;
 }
 
 img.profile{
     float: left;
-    height: 18em;
+    height: 35vw;
     padding-right: 1em;
+    max-height: 18em;
 }
 
 .resume_download{
-
     float: left;  
     padding: 25px;  
 }
