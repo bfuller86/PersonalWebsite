@@ -11,7 +11,7 @@ body{
     padding: 1em;
     background-color: $color_main;
     color: $color_main_text;
-    border-radius: 8px;
+    @include border-radius(8px);
     border: 2px solid $color_main_border;
     min-height: 18em;
 }
