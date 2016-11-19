@@ -29,6 +29,10 @@ function NavigationController($scope, $element, $attrs) {
   $scope.openMenu = function(){
     $scope.isMenuOpen = !$scope.isMenuOpen;
   };
+
+  $scope.closeMenu = function(){
+    $scope.isMenuOpen = false;
+  };
 }
 
 app.component('navigation', {

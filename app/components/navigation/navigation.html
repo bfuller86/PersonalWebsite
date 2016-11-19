@@ -1,12 +1,12 @@
 <div id="navigation">
   <a ng-click="openMenu()" class="nav_link menu_btn fa fa-bars"></a>
-  <a class="nav_link" ui-sref="root.home">
+  <a ng-click="closeMenu()" class="nav_link" ui-sref="root.home">
     <div class="logo"></div>
   </a>
   <ul class="nav_bar_list">
     <li ng-repeat="link in links"><a class="nav_link" ui-sref="{{link.url}}">{{link.text}}</a></li>
   </ul>
   <div ng-class="{open: (isMenuOpen)}" class="nav_menu">
-    <a ng-repeat="link in links" class="nav_link" ui-sref="{{link.url}}"><i class="link_icon {{link.icon}}"></i> {{link.text}}</a>
+    <a ng-repeat="link in links" ng-click="closeMenu()" class="nav_link" ui-sref="{{link.url}}"><i class="link_icon {{link.icon}}"></i> {{link.text}}</a>
   </div>
 </div>
