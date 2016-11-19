@@ -74,6 +74,12 @@ img.profile {
   max-height: 400px;
   max-width: 600px;
   margin: 2em 0em 2em 0em; }
+.gameDetails .game_photo {
+  display: block;
+  clear: both;
+  width: 60vw;
+  max-width: 600px;
+  margin: 2em 0em 2em 0em; }
 .gameDetails label {
   font-size: 12pt;
   font-weight: 700; }

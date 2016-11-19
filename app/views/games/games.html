@@ -4,7 +4,8 @@
         
         <h2 class="name">{{game.Name}}</h2>
         <iframe class="game_trailer" ng-if="game.Trailer" src="{{ trustSrc(game.Trailer) }}" allowfullscreen frameborder="0"></iframe>
-                
+        <img class="game_photo" ng-if="game.Photo && !game.Trailer" src="{{ game.Photo }}" />
+
         <table>
             <tr>
                 <td><label>Publisher</label></td>
@@ -36,8 +37,6 @@
         <ul class="tech">
             <li ng-repeat="techItem in game.Tech">{{techItem}}</li>
         </ul>
-        
-        <!--<img ng-if="game.Photo" src="{{ game.Photo }}" />-->
 
         <label ng-if="game.Tags && game.Tags.length > 0">Tags</label>
         <br />

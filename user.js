@@ -151,7 +151,7 @@ app.service('dataService', function(){
                 "Key": "ZombieYoga",
                 "Name": "Zombie Yoga",
                 "Date": "11-15-2012",
-                "Photo": "",
+                "Photo": "app/content/images/games/ZombieYoga.jpg",
                 "Trailer": "",
                 "Description": "",
                 "Platform": ["PC"],
