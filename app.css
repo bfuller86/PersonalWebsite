@@ -2364,7 +2364,7 @@ img.profile {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  height: 70px;
+  height: 140px;
   list-style: none;
   margin: 0px;
   background: #004c8c;
@@ -2373,7 +2373,8 @@ img.profile {
   justify-content: flex-start; }
   #navigation .menu_btn {
     height: 100%;
-    line-height: 70px; }
+    font-size: 70px;
+    line-height: 140px; }
   #navigation .nav_bar_list {
     display: none;
     list-style: none;
@@ -2382,24 +2383,22 @@ img.profile {
     padding: 0px; }
     #navigation .nav_bar_list .nav_link {
       height: 100%;
-      line-height: 70px;
+      line-height: 140px;
       border-right: 1px solid #aad8ff;
       border-left: 1px solid #aad8ff; }
   #navigation .nav_menu {
     display: none;
     position: absolute;
-    top: 72px;
+    top: 142px;
     left: 0;
     width: 100%;
     background: #004c8c; }
     #navigation .nav_menu .nav_link {
-      height: 70px;
-      line-height: 70px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
+      height: 140px;
+      line-height: 140px;
       border-top: 1px solid #aad8ff;
-      border-bottom: 1px solid #aad8ff; }
+      border-bottom: 1px solid #aad8ff;
+      font-size: 70px; }
   #navigation .nav_menu.open {
     display: block; }
   #navigation .nav_link {
@@ -2409,7 +2408,7 @@ img.profile {
     color: #aad8ff; }
   #navigation .nav_link:hover {
     background: #003b6c; }
-  @media only screen and (min-width: 55em) {
+  @media only screen and (device-width: 850px) {
     #navigation .nav_bar_list {
       display: -webkit-box;
       display: -moz-box;
@@ -2424,40 +2423,52 @@ img.profile {
 
 .logo {
   display: inline-block;
-  height: 70px;
-  width: 301px;
-  background-image: url("app/content/images/logo.png"); }
+  height: 140px;
+  width: 602px;
+  background-image: url("app/content/images/logo.png");
+  background-size: contain; }
 
 .link_icon {
   padding-right: 20px; }
 
-.gameDetails td {
-  padding-right: 3em; }
+.gameDetails .name {
+  text-align: center;
+  font-size: 3rem; }
 .gameDetails .game_trailer {
   display: block;
   clear: both;
-  height: 40vw;
-  width: 60vw;
-  max-height: 400px;
-  max-width: 600px;
-  margin: 2em 0em 2em 0em; }
+  height: 60vw;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto; }
 .gameDetails .game_photo {
   display: block;
   clear: both;
-  width: 60vw;
-  max-width: 600px;
-  margin: 2em 0em 2em 0em; }
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto; }
+.gameDetails .details {
+  margin: 0.5em auto;
+  width: 73vw; }
+  .gameDetails .details td {
+    padding-right: 3em; }
+  .gameDetails .details .detail {
+    font-size: 2rem; }
 .gameDetails label {
-  font-size: 12pt;
+  font-size: 2rem;
   font-weight: 700; }
-.gameDetails h4 {
-  margin-bottom: 0.5em; }
-.gameDetails ul {
-  margin-top: 0; }
+.gameDetails .tech_section {
+  width: 73vw;
+  font-size: 2rem;
+  margin: 0 auto; }
+  .gameDetails .tech_section h4 {
+    margin-bottom: 0.5em; }
+  .gameDetails .tech_section .tech {
+    margin-top: 0; }
 .gameDetails .tag {
   display: inline;
   margin: 0.5em 0.25em;
-  font-size: 11pt;
+  font-size: 1.3rem;
   color: #FFC000; }
 
 .projectDetails td {

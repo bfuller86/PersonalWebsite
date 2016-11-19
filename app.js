@@ -37060,7 +37060,7 @@ function NavigationController($scope, $element, $attrs) {
       {
         text: "Games", 
         url: "root.games",
-        icon: "fa fa-space-shuttle"
+        icon: "fa fa-puzzle-piece"
       },
       {
         text: "Resume", 

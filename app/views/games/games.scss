@@ -1,45 +1,65 @@
 .gameDetails{
-    td{
-       padding-right: 3em; 
+
+    .name{
+        text-align: center;
+        font-size: 3rem;
     }
 
     .game_trailer{
         display: block;
         clear: both;
-        height: 40vw;
-        width: 60vw;
-        max-height: 400px;
-        max-width: 600px;
+        height: 60vw;
+        width: 80vw;
 
-        margin: 2em 0em 2em 0em;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .game_photo{
         display: block;
         clear: both;
-        width: 60vw;
-        max-width: 600px;
+        width: 80vw;
 
-        margin: 2em 0em 2em 0em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .details{
+        margin: 0.5em auto;
+        width: 73vw;
+
+        td{
+            padding-right: 3em; 
+        }
+
+        .detail{
+            font-size: 2rem;
+        }
     }
 
     label{
-        font-size: 12pt;
+        font-size: 2rem;
         font-weight: 700;
     }
 
-    h4{
-        margin-bottom: 0.5em;
-    }
+    .tech_section{
+        width: 73vw;
+        font-size: 2rem;
+        margin: 0 auto;
 
-    ul{
-        margin-top: 0;
+        h4{
+            margin-bottom: 0.5em;
+        }
+
+        .tech{
+            margin-top: 0;
+        }
     }
 
     .tag{
         display: inline;
         margin: 0.5em 0.25em;
-        font-size: 11pt;
+        font-size: 1.3rem;
         color: $color_alt_text;
     }
 }

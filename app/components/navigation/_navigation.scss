@@ -1,5 +1,5 @@
 // variables
-$navbar_height: 70px;
+$navbar_height: 140px;
 $navbar_border: 2px;
 $logo_width: ($navbar_height * 4.3);
 
@@ -17,6 +17,7 @@ $logo_width: ($navbar_height * 4.3);
 
     .menu_btn{
         height: 100%;
+        font-size: ($navbar_height / 2);
         line-height: $navbar_height;
     }
 
@@ -46,11 +47,9 @@ $logo_width: ($navbar_height * 4.3);
         .nav_link{
             height: $navbar_height;
             line-height: $navbar_height;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
             border-top: 1px solid $color_accent_text;
             border-bottom: 1px solid $color_accent_text;
+            font-size: ($navbar_height / 2);
         }
     }
 
@@ -89,6 +88,7 @@ $logo_width: ($navbar_height * 4.3);
     height: $navbar_height;
     width: $logo_width;
     background-image: url("app/content/images/logo.png");
+    background-size: contain;
 }
 
 .link_icon{
