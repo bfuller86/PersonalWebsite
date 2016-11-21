@@ -147,8 +147,7 @@ app.service('dataService', function(){
         ],
         "ContactInfo": [
             {
-                "Key": "Email",
-                "Info": "contactme@brianfuller.us"
+                "Email": "contactme@brianfuller.us"
             }
         ]
     };

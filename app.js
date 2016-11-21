@@ -37055,7 +37055,7 @@ function NavigationController($scope, $element, $attrs) {
       {
         text: "Projects", 
         url: "root.projects",
-        icon: "fa fa-suitcase"
+        icon: "fa fa-bar-chart"
       },
       {
         text: "Games", 
@@ -37278,8 +37278,7 @@ app.service('dataService', function(){
         ],
         "ContactInfo": [
             {
-                "Key": "Email",
-                "Info": "contactme@brianfuller.us"
+                "Email": "contactme@brianfuller.us"
             }
         ]
     };

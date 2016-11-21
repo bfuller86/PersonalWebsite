@@ -7,7 +7,7 @@ function NavigationController($scope, $element, $attrs) {
       {
         text: "Projects", 
         url: "root.projects",
-        icon: "fa fa-suitcase"
+        icon: "fa fa-bar-chart"
       },
       {
         text: "Games", 

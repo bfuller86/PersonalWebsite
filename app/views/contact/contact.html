@@ -1,4 +1,6 @@
 <h1 class="heading">Contact</h1>
 <div class="card">
-    <p ng-repeat="contact in contactInfo">{{contact.Key}} - {{contact.Info}}</p>
+    <div ng-repeat="contact in contactInfo" class="contactInfo">
+        <a ng-if="contact.Email" href="mailto:{{contact.Email}}">{{contact.Email}}</a>
+    </div>
 </div>
